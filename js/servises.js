@@ -12,6 +12,7 @@ inputGuarantee.onclick = function () {
     boxItem.classList.remove('selected');
    }
   guarantee.classList.add('selected');
+
 }
 
 inputCredit.onclick = function () {

@@ -6,7 +6,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Техномарт</title>
   </head>
   <body class="page-body">
@@ -17,7 +17,7 @@
             <a class="top-menu__logo" href="index.html">
               <img
                 src="img/logo-technomart.png"
-                alt="Логотип компании Техномарт">
+                alt="Логотип компании Техномарт" width="108" height="18">
             </a>
             <form action="https://echo.htmlacademy.ru/" method="get">
               <div class="wrap-search__input">
@@ -56,7 +56,7 @@
           </h1>
           <section class="general-info__contacts contacts">
             <h2 class="visually-hidden">Наши контакты</h2>
-            <a class="contacts__phone" href="tel:+78005558628">+ 7 800 555 86 28</a>
+            <a class="contacts__phone" href="tel:+78005558628">+7 800 555-86-28</a>
             <a class="contacts__adress" href="#">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</a>
           </section>
           <!--должна вести на карту-->
@@ -112,9 +112,11 @@
         <section class="breadcrumbs container">
             <h3 class="visually-hidden">Навигация по каталогу</h3>
             <ul class="breadcrumbs__list">
-                <li class="breadcrumbs__item"><a  href="index.html">
-                  <img src="img/small-img/icon-home.png" alt="Вернуться на главную страницу" width="14" height="12">
-                </a></li>
+                <li class="breadcrumbs__item">
+                  <a  href="index.html" aria-label="Главная">
+                    <svg aria-hidden="true" focusable="false" width="14" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 8v4h4V8h2v4h4V8L7 3.516 2 8Z" fill="#C1C6CE"/><path d="M13.831 6.365 12 4.751V0h-2v2.987L7.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C7.062.521 7.032.515 7 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037L.171 6.365a.501.501 0 0 0 .661.75L7 1.677l6.169 5.438a.501.501 0 0 0 .662-.75Z" fill="#C1C6CE"/></svg>
+                  </a>
+                </li>
                 <li class="breadcrumbs__item"><a  href="#">Каталог</a></li>
                 <li class="breadcrumbs__item"><a  href="#">Инструмент</a></li>
                 <li class="breadcrumbs__item breadcrumbs__item_current"><a  href="#">Перфораторы</a></li>
@@ -172,7 +174,7 @@
                           <input class="visually-hidden filter__radio-input" type="radio" value="mains-power" id="mains-power" name="power">
                           <label class="filter__content" for="mains-power">Сетевые</label>
                   </fieldset>
-                  <button class="filter__button" aria-label="Показать результаты отбора">Показать</button>
+                  <button type="submit" class="filter__button" aria-label="Показать результаты отбора">Показать</button>
               </form>
           </section>
           <section class="sorting">
@@ -200,99 +202,153 @@
               <ul class="products__list">
                   <li class="products__item item">
                           <div class="wrap-popup">
-                            <img class="item__image" src="img/BOSH6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"/>
+                            <img class="item__image" src="img/bosch6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"/>
                           </div>
                           <h3 class="item__title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
                           <p class="item__content_delete"><del>30500 р.</del></p>
                           <p class="item__content">25500 p.</p>
                           <div class="products__popup popup_hidden">
-                            <button class="products__button products__button_buy">Купить</button>
-                            <button class="products__button products__button_to-bookmarks">В закладки</button>
+                            <a href="#" class="products__button products__button_buy">
+                              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                                <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                                <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                              </svg> Купить
+                            </a>
+                            <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
                           </div>
                   </li>
                   <li class="products__item item">
                         <div class="wrap-popup">
-                          <img class="item__image" src="img/BOSH2000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112"/>
+                          <img class="item__image" src="img/bosch6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"/>
                         </div>
-                        <h3 class="item__title"><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
-                        <p class="item__content_delete"><del>22500 р.</del></p>
-                        <p class="item__content">15500 p.</p>
+                        <h3 class="item__title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+                        <p class="item__content_delete"><del>30500 р.</del></p>
+                        <p class="item__content">25500 p.</p>
                         <div class="products__popup popup_hidden">
-                          <button class="products__button products__button_buy">Купить</button>
-                          <button class="products__button products__button_to-bookmarks">В закладки</button>
+                          <a href="#" class="products__button products__button_buy">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                              <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                              <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                            </svg> Купить
+                          </a>
+                          <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
                         </div>
                 </li>
                 <li class="products__item item">
 
-                      <div class="wrap-popup"><img class="item__image" src="img/BOSH6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"/></div>
-                      <h3 class="item__title"><a href="#">Перфоратор BOSCH BFG</a></h3>
-                      <p class="item__content_delete"><del>35500 р.</del></p>
+                      <div class="wrap-popup"><img class="item__image" src="img/bosch6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"/></div>
+                      <h3 class="item__title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+                      <p class="item__content_delete"><del>30500 р.</del></p>
                       <p class="item__content">25500 p.</p>
                       <div class="products__popup popup_hidden">
-                        <button class="products__button products__button_buy">Купить</button>
-                        <button class="products__button products__button_to-bookmarks">В закладки</button>
+                        <a href="#" class="products__button products__button_buy">
+                          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                            <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                            <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                          </svg> Купить
+                        </a>
+                        <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
                       </div>
               </li>
               <li class="products__item item label-new">
 
-                   <div class="wrap-popup"><img class="item__image" src="img/BOSH2000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112"/></div>
-                    <h3 class="item__title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
-                    <p class="item__content_delete"><del>30500 р.</del></p>
-                    <p class="item__content">25500 p.</p>
+                   <div class="wrap-popup"><img class="item__image" src="img/bosch3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112"/></div>
+                    <h3 class="item__title"><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
+                    <p class="item__content_delete"><del>22500 р.</del></p>
+                    <p class="item__content">15500 p.</p>
                     <div class="products__popup popup_hidden">
-                      <button class="products__button products__button_buy">Купить</button>
-                      <button class="products__button products__button_to-bookmarks">В закладки</button>
+                      <a href="#" class="products__button products__button_buy">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                          <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                          <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                        </svg> Купить
+                      </a>
+                      <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
                     </div>
               </li>
               <li class="products__item item">
-                    <div class="wrap-popup"><img class="item__image" src="img/BOSH6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"/></div>
+                    <div class="wrap-popup"><img class="item__image" src="img/bosch6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"/></div>
                     <h3 class="item__title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
                     <p class="item__content_delete"><del>30500 р.</del></p>
                     <p class="item__content">25500 p.</p>
                     <div class="products__popup popup_hidden">
-                      <button class="products__button products__button_buy">Купить</button>
-                      <button class="products__button products__button_to-bookmarks">В закладки</button>
+                      <a href="#" type="button" class="products__button products__button_buy">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                          <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                          <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                        </svg> Купить
+                      </a>
+                      <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
                     </div>
               </li>
               <li class="products__item item label-new">
 
-                    <div class="wrap-popup"><img class="item__image" src="img/BOSH2000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112"/></div>
+                    <div class="wrap-popup"><img class="item__image" src="img/bosch2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112"/></div>
+                    <h3 class="item__title"><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
+                    <p class="item__content_delete"><del>22500 р.</del></p>
+                    <p class="item__content">12500 p.</p>
+                    <div class="products__popup popup_hidden">
+                      <a href="#" class="products__button products__button_buy">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                          <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                          <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                        </svg> Купить
+                      </a>
+                      <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
+                    </div>
+              </li>
+              <li class="products__item item label-new">
+                   <div class="wrap-popup"> <img class="item__image" src="img/bosch3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112"/></div>
                     <h3 class="item__title"><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
                     <p class="item__content_delete"><del>22500 р.</del></p>
                     <p class="item__content">15500 p.</p>
                     <div class="products__popup popup_hidden">
-                      <button class="products__button products__button_buy">Купить</button>
-                      <button class="products__button products__button_to-bookmarks">В закладки</button>
+                      <a href="#" class="products__button products__button_buy">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                          <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                          <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                        </svg> Купить
+                      </a>
+                      <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
                     </div>
               </li>
-              <li class="products__item item label-new">
-                   <div class="wrap-popup"> <img class="item__image" src="img/BOSH6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"/></div>
+              <li class="products__item item">
+                    <div class="wrap-popup"><img class="item__image" src="img/bosch6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"/></div>
                     <h3 class="item__title"><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
                     <p class="item__content_delete"><del>30500 р.</del></p>
                     <p class="item__content">25500 p.</p>
                     <div class="products__popup popup_hidden">
-                      <button class="products__button products__button_buy">Купить</button>
-                      <button class="products__button products__button_to-bookmarks">В закладки</button>
-                    </div>
-              </li>
-              <li class="products__item item">
-                    <div class="wrap-popup"><img class="item__image" src="img/BOSH2000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112"/></div>
-                    <h3 class="item__title"><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
-                    <p class="item__content_delete"><del>12500 р.</del></p>
-                    <p class="item__content">12500 p.</p>
-                    <div class="products__popup popup_hidden">
-                      <button class="products__button products__button_buy">Купить</button>
-                      <button class="products__button products__button_to-bookmarks">В закладки</button>
+                      <a href="#" class="products__button products__button_buy">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                          <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                          <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                        </svg> Купить
+                      </a>
+                      <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
                     </div>
               </li>
               <li class="products__item item label-new">
-                    <div class="wrap-popup"><img class="item__image" src="img/BOSH6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128"/></div>
-                    <h3 class="item__title"><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
+                    <div class="wrap-popup"><img class="item__image" src="img/bosch2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112"/></div>
+                    <h3 class="item__title"><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
                     <p class="item__content_delete"><del>22500 р.</del></p>
-                    <p class="item__content">15500 p.</p>
+                    <p class="item__content">12500 p.</p>
                     <div class="products__popup popup_hidden">
-                      <button class="products__button products__button_buy">Купить</button>
-                      <button class="products__button products__button_to-bookmarks">В закладки</button>
+                      <a href="#" class="products__button products__button_buy">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                          <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                          <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                        </svg> Купить
+                      </a>
+                      <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
                     </div>
               </li>
             </ul>
@@ -316,7 +372,9 @@
     <footer class="footer">
       <section class="footer-menu container">
           <div class="footer-menu__logo">
-              <img src="img/logo-technomart-na-podlozhke.png" alt="Лого Техномарт" width="220" height="68">
+              <a href="index.html">
+                <img src="img/logo-technomart-na-podlozhke.png" alt="Лого Техномарт" width="220" height="68">
+              </a>
               <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br>
                   +7 800 555-86-28</p>
           </div>
@@ -371,14 +429,14 @@
   </footer>
     <section class="modal  popup-cart">
       <h4 class="popup-cart__title">Товар добавлен в корзину!</h4>
-      <button class="popup-cart__button_close">
-        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <button type="button" class="popup-cart__button_close" aria-label="Закрыть">
+        <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M13.2729 10.4999L20.6949 3.07793C21.0839 2.68893 21.0839 2.05293 20.6949 1.66393L19.3359 0.304934C18.9469 -0.0840664 18.3109 -0.0840664 17.9219 0.304934L10.4999 7.72693L3.07793 0.304934C2.68893 -0.0840664 2.05293 -0.0840664 1.66393 0.304934L0.304934 1.66393C-0.0840664 2.05293 -0.0840664 2.68893 0.304934 3.07793L7.72693 10.4999L0.305934 17.9219C-0.0830664 18.3109 -0.0830664 18.9469 0.305934 19.3359L1.66493 20.6949C2.05393 21.0839 2.68993 21.0839 3.07893 20.6949L10.5009 13.2729L17.9229 20.6949C18.3119 21.0839 18.9479 21.0839 19.3369 20.6949L20.6959 19.3359C21.0849 18.9469 21.0849 18.3109 20.6959 17.9219L13.2729 10.4999Z" fill="#EE3643"/>
         </svg>
       </button>
       <div class="box-button">
-        <button class="popup-cart__button popup-cart__button_red">Оформить заказ</button>
-        <button class="popup-cart__button">Продолжить покупки</button>
+        <button type="button" class="popup-cart__button popup-cart__button_red">Оформить заказ</button>
+        <button type="button" class="popup-cart__button">Продолжить покупки</button>
       </div>
     </section>
     <script src="js/modalCart.min.js"></script>
