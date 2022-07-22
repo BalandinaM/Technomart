@@ -6,7 +6,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Техномарт</title>
   </head>
   <body class="page-body">
@@ -17,7 +17,7 @@
             <a class="top-menu__logo" href="#">
               <img
                 src="img/logo-technomart.png"
-                alt="Логотип компании Техномарт">
+                alt="Логотип компании Техномарт" width="108" height="18">
             </a>
             <form action="https://echo.htmlacademy.ru/" method="get">
                   <div class="wrap-search__input">
@@ -56,13 +56,13 @@
           </h1>
           <section class="general-info__contacts contacts">
           <h2 class="visually-hidden">Наши контакты</h2>
-            <a class="contacts__phone" href="tel:+78005558628">+ 7 800 555 86 28</a>
+            <a class="contacts__phone" href="tel:+78005558628">+7 800 555-86-28</a>
             <a class="contacts__adress" href="#">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</a>
           </section>
           <section class="general-info__login-user ">
             <h2 class="visually-hidden">Войти в личный кабинет или зарегистрироваться</h2>
               <a  class="login__exit" href="#">
-                <svg aria-hidden="true" focusable="false" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="login__exit_svg" aria-hidden="true" focusable="false" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.1667 9L5.71429 0.5V6.5H0V11.5H5.71429V17.5L14.1667 9Z" fill="#C5C5C5"/>
                   <path d="M16.1771 15.51H11.3895V17.5H16.1771C18.2514 17.5 19.0381 15.69 19.0619 14.474V3.528C19.0381 2.311 18.2514 0.5 16.1771 0.5H11.3895V2.49H16.1771C16.9762 2.49 17.1219 3.171 17.1391 3.547V14.451C17.1229 14.827 16.9762 15.51 16.1771 15.51Z" fill="#C5C5C5"/>
                 </svg> Войти</a>
@@ -167,35 +167,75 @@
         <ul class="products__list">
           <li class="products__item item label-new">
               <div class="wrap-popup">
-                <img class="item__image" src="img/pop-BOSH9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164"/>
+                <img class="item__image" src="img/bosch9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164"/>
               </div>
                 <h3 class="item__title"><a href="#">Перфоратор BOSCH <br> BFG 9000</a></h3> <!--Ссылка внутри h3 сделана для доступности, предполагаю что при переходе по ссылке откроется страница товара на которой будет нормальные кнопки купить или добавить в закладки. Как реализовать с попапом не придумала.-->
                 <p class="item__content_delete"><del> 32500 p.</del></p>
                 <p class="item__content">25500 p.</p>
+                <div class="products__popup popup_hidden">
+                  <a href="#" class="products__button products__button_buy">
+                    <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                      <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                      <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                    </svg> Купить
+                  </a>
+                  <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
+                </div>
           </li>
           <li class="products__item item label-new">
               <div class="wrap-popup">
-                <img class="item__image" src="img/pop-BOSH3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112" />
+                <img class="item__image" src="img/bosch3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112" />
               </div>
               <h3 class="item__title"><a href="#">Перфоратор BOSCH <br> BFG 3000</a></h3>
               <p class="item__content_delete"><del> 22500 p.</del></p>
               <p class="item__content">15500 p.</p>
+              <div class="products__popup popup_hidden">
+                <a href="#" class="products__button products__button_buy">
+                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                    <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                    <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                  </svg> Купить
+                </a>
+                <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
+              </div>
           </li>
           <li class="products__item item">
               <div class="wrap-popup">
-                <img class="item__image" src="img/pop-BOSH6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128" />
+                <img class="item__image" src="img/bosch6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128" />
               </div>
               <h3 class="item__title"><a href="#">Перфоратор BOSCH <br> BFG 6000</a></h3>
               <p class="item__content_delete"><del> 30500 p.</del></p>
               <p class="item__content">25500 p.</p>
+              <div class="products__popup popup_hidden">
+                <a href="#" class="products__button products__button_buy">
+                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                    <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                    <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                  </svg> Купить
+                </a>
+                <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
+              </div>
           </li>
           <li class="products__item item label-new">
               <div class="wrap-popup ">
-                <img class="item__image" src="img/pop-BOSH2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112" />
+                <img class="item__image" src="img/bosch2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112" />
               </div>
               <h3 class="item__title"><a href="#">Перфоратор BOSCH <br> BFG 2000</a></h3>
               <p class="item__content_delete"><del> 22500 p.</del></p>
               <p class="item__content">12500 p.</p>
+              <div class="products__popup popup_hidden">
+                <a href="#" class="products__button products__button_buy">
+                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                    <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                    <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                  </svg> Купить
+                </a>
+                <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
+              </div>
           </li>
         </ul>
       </section>
@@ -206,28 +246,28 @@
         </header>
         <ul class="top-makers__list">
           <li class="top-makers__item">
-            <a href="#"><img src="img/logo-partners/bosch.png" alt="Лого фирмы BOSCH" width="126" height="37" /></a>
+            <a href="#"><img class="top-makers__item-logo" src="img/logo-partners/bosch.png" alt="Лого фирмы BOSCH" width="126" height="37" /></a>
           </li>
           <li class="top-makers__item">
-            <a href="#"><img src="img/logo-partners/Makita.png" alt="Лого фирмы Makita" width="123" height="40"/></a>
+            <a href="#"><img class="top-makers__item-logo" src="img/logo-partners/makita.png" alt="Лого фирмы Makita" width="123" height="40"/></a>
           </li>
           <li class="top-makers__item">
-            <a href="#"><img src="img/logo-partners/DeWALT.png" alt="Лого фирмы DeWALT" width="146" height="44"/></a>
+            <a href="#"><img class="top-makers__item-logo" src="img/logo-partners/dewalt.png" alt="Лого фирмы DeWALT" width="146" height="44"/></a>
           </li>
           <li class="top-makers__item">
-            <a href="#"><img src="img/logo-partners/Интерскол.png" alt="Лого фирмы Интерскол" width="200" height="76"/></a>
+            <a href="#"><img class="top-makers__item-logo" src="img/logo-partners/interskol.png" alt="Лого фирмы Интерскол" width="200" height="76"/></a>
           </li>
           <li class="top-makers__item">
-            <a href="#"><img src="img/logo-partners/Hitachi.png" alt="Лого фирмы HITACHI" width="169" height="31"/></a>
+            <a href="#"><img class="top-makers__item-logo" src="img/logo-partners/hitachi.png" alt="Лого фирмы HITACHI" width="169" height="31"/></a>
           </li>
           <li class="top-makers__item">
-            <a href="#"><img src="img/logo-partners/LG.png" alt="Лого фирмы LG" width="121" height="73"/></a>
+            <a href="#"><img class="top-makers__item-logo" src="img/logo-partners/lg.png" alt="Лого фирмы LG" width="121" height="73"/></a>
           </li>
           <li class="top-makers__item">
-            <a href="#"><img src="img/logo-partners/AEG.png" alt="Лого фирмы AEG" width="151" height="96"/></a>
+            <a href="#"><img class="top-makers__item-logo" src="img/logo-partners/aeg.png" alt="Лого фирмы AEG" width="151" height="96"/></a>
           </li>
           <li class="top-makers__item">
-            <a href="#"><img src="img/logo-partners/Metabo.png" alt="Лого фирмы Metabo" width="204" height="69"/></a>
+            <a href="#"><img class="top-makers__item-logo" src="img/logo-partners/metabo.png" alt="Лого фирмы Metabo" width="204" height="69"/></a>
           </li>
         </ul>
       </section>
@@ -238,12 +278,9 @@
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services__box box">
             <div class="input-wrapper">
-              <input class="visually-hidden input-services" type="radio" name="point" id="delivery" checked/>
-              <label class="box__control" for="delivery">Доставка</label>
-              <input class="visually-hidden input-services" type="radio" name="point" id="guarantee" />
-              <label class="box__control " for="guarantee">Гарантия</label>
-              <input class="visually-hidden input-services" type="radio" name="point" id="credit" />
-              <label class="box__control " for="credit">Кредит</label>
+              <button type="button" class="box__control" id="delivery">Доставка</button>
+              <button type="button" class="box__control" id="guarantee">Гарантия</button>
+              <button type="button" class="box__control" id="credit">Кредит</button>
             </div>
             <div class="box__item item item_delivery selected" title="Доставка">
               <h3 class="item__title">Доставка</h3>
@@ -270,7 +307,7 @@
                 Залезть в долговую яму стало проще!<br />
                 Кредитные консультанты придут вам на помощь.
               </p>
-            <button class="item__button button">Отправить заявку</button>
+            <button type="button" class="item__button button">Отправить заявку</button>
             </div>
           </div>
         </section>
@@ -300,15 +337,19 @@
             Вы можете забрать товар сами<br />
             заехав в наш офис:
           </p>
-          <img class="contacts__map" src="img/map.png" alt="Адрес: наб. Реки Карповки, 5 лит П"  width="300" height="158"/>
-          <button class="contacts__button button" >Заблудились? Напишите нам!</button>
+
+            <a href="#"><img class="contacts__map" src="img/map.png" alt="Адрес: наб. Реки Карповки, 5 лит П"  width="300" height="158"/></a>
+
+          <a href="#" class="contacts__button button" >Заблудились? Напишите нам!</a>
         </section>
       </section>
     </main>
     <footer class="footer">
         <section class="footer-menu container">
             <div class="footer-menu__logo">
-                <img src="img/logo-technomart-na-podlozhke.png" alt="Лого Техномарт" width="220" height="68">
+                <a href="#">
+                  <img src="img/logo-technomart-na-podlozhke.png" alt="Лого Техномарт" width="220" height="68">
+                </a>
                 <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br>
                     +7 800 555-86-28</p>
             </div>
@@ -393,9 +434,9 @@
             </div>
           </div>
          <div class="box-button">
-           <button class="modal-feedback__button">Отправить</button>
+           <button type="submit" class="modal-feedback__button">Отправить</button>
           </div>
-          <button class="modal__button_close" aria-label="Закрыть">
+          <button type="button" class="modal__button_close" aria-label="Закрыть">
             </button>
       </form>
     </section>
@@ -403,9 +444,22 @@
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d998.3800241396799!2d30.315022253705134!3d59.969303685291294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2sru!4v1654506881673!5m2!1sru!2sru" width="943" height="449" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
       </iframe>
-      <button class="modal__button_close" aria-label="Закрыть">
+      <button type="button" class="modal__button_close" aria-label="Закрыть">
       </button>
     </section>
+    <section class="modal  popup-cart">
+      <h4 class="popup-cart__title">Товар добавлен в корзину!</h4>
+      <button type="button" class="popup-cart__button_close" aria-label="Закрыть">
+        <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.2729 10.4999L20.6949 3.07793C21.0839 2.68893 21.0839 2.05293 20.6949 1.66393L19.3359 0.304934C18.9469 -0.0840664 18.3109 -0.0840664 17.9219 0.304934L10.4999 7.72693L3.07793 0.304934C2.68893 -0.0840664 2.05293 -0.0840664 1.66393 0.304934L0.304934 1.66393C-0.0840664 2.05293 -0.0840664 2.68893 0.304934 3.07793L7.72693 10.4999L0.305934 17.9219C-0.0830664 18.3109 -0.0830664 18.9469 0.305934 19.3359L1.66493 20.6949C2.05393 21.0839 2.68993 21.0839 3.07893 20.6949L10.5009 13.2729L17.9229 20.6949C18.3119 21.0839 18.9479 21.0839 19.3369 20.6949L20.6959 19.3359C21.0849 18.9469 21.0849 18.3109 20.6959 17.9219L13.2729 10.4999Z" fill="#EE3643"/>
+        </svg>
+      </button>
+      <div class="box-button">
+        <button type="button" class="popup-cart__button popup-cart__button_red">Оформить заказ</button>
+        <button type="button" class="popup-cart__button">Продолжить покупки</button>
+      </div>
+    </section>
+    <script src="js/modalCart.min.js"></script>
     <script src="js/servises.min.js"></script>
     <script src="js/promoslider.min.js"></script>
     <script src="js/modalLetter.min.js"></script>
