@@ -6,7 +6,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Техномарт</title>
   </head>
   <body class="page-body">
@@ -14,37 +14,36 @@
       <header class="header">
         <div class="top-menu-wrapper">
           <section class="header__top-menu top-menu container">
-            <a class="top-menu__logo" href="#">
+            <a class="top-menu__logo" href="index.html">
               <img
                 src="img/logo-technomart.png"
                 alt="Логотип компании Техномарт" width="108" height="18">
             </a>
             <form action="https://echo.htmlacademy.ru/" method="get">
-                  <div class="wrap-search__input">
-                    <label for="search" class="visually-hidden">Поиск</label>
-                    <input class="search__input" type="search" name="search" id="search" placeholder="Поиск:" />
-                    <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="rgba(255, 255, 255, 0.3)"/>
-                    </svg>
-                  </div>
-
+              <div class="wrap-search__input">
+                <label for="search" class="visually-hidden">Поиск</label>
+                <input class="search__input" type="search" name="search" id="search" placeholder="Поиск:" />
+                <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="rgba(255, 255, 255, 0.3)"/>
+                </svg>
+              </div>
             </form>
             <nav class="top-menu__nav">
-                <a class="top-menu__nav-item" href="#">
-                  <svg aria-hidden="true" focusable="false" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z" fill="white"/>
-                  </svg>
-                  <span>Закладки: 0</span>
-                </a>
-                <a class="top-menu__nav-item" href="#">
-                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
-                    <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
-                    <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
-                  </svg>
-                  <span>Корзина: 0</span>
-                </a>
-                <a class="top-menu__nav-item" href="#">Оформить заказ</a>
+              <a class="top-menu__nav-item" href="#">
+                <svg class="svg-bookmarks" aria-hidden="true" focusable="false" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z" fill="white"/>
+                </svg>
+                <span>Закладки: 0</span>
+              </a>
+              <a class="top-menu__nav-item" href="#">
+                <svg class="svg-cart" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                  <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                  <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                </svg>
+                <span>Корзина: 0</span>
+              </a>
+              <a class="top-menu__nav-item" href="#">Оформить заказ</a>
             </nav>
           </section>
         </div>
@@ -62,9 +61,9 @@
           <section class="general-info__login-user ">
             <h2 class="visually-hidden">Войти в личный кабинет или зарегистрироваться</h2>
               <a  class="login__exit" href="#">
-                <svg class="login__exit_svg" aria-hidden="true" focusable="false" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.1667 9L5.71429 0.5V6.5H0V11.5H5.71429V17.5L14.1667 9Z" fill="#C5C5C5"/>
-                  <path d="M16.1771 15.51H11.3895V17.5H16.1771C18.2514 17.5 19.0381 15.69 19.0619 14.474V3.528C19.0381 2.311 18.2514 0.5 16.1771 0.5H11.3895V2.49H16.1771C16.9762 2.49 17.1219 3.171 17.1391 3.547V14.451C17.1229 14.827 16.9762 15.51 16.1771 15.51Z" fill="#C5C5C5"/>
+                <svg class="login__exit_svg" aria-hidden="true" focusable="false" width="20" height="18" viewBox="0 0 20 18" fill="#C5C5C5" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.1667 9L5.71429 0.5V6.5H0V11.5H5.71429V17.5L14.1667 9Z"/>
+                  <path d="M16.1771 15.51H11.3895V17.5H16.1771C18.2514 17.5 19.0381 15.69 19.0619 14.474V3.528C19.0381 2.311 18.2514 0.5 16.1771 0.5H11.3895V2.49H16.1771C16.9762 2.49 17.1219 3.171 17.1391 3.547V14.451C17.1229 14.827 16.9762 15.51 16.1771 15.51Z"/>
                 </svg> Войти</a>
               <a class="login__registration" href="#">Регистрация</a>
           </section>
@@ -73,11 +72,11 @@
             <div class="wrap-authorized-user">
               <a class="authorized-user__name" href="#">
                 <svg aria-hidden="true" focusable="false" class="authorized-user__icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.881 14.666C15.737 13.931 13.625 13 12.674 12.276C12.017 11.775 11.904 10.658 12.157 9.861C13.275 8.958 14.021 7.384 14.021 5.583C14.021 2.776 12.221 0.5 10 0.5C7.77902 0.5 5.97901 2.776 5.97901 5.583C5.97901 7.384 6.72501 8.957 7.84201 9.86C8.09501 10.658 7.98302 11.775 7.32502 12.276C6.37502 13 4.26201 13.93 2.11801 14.666C-0.0259852 15.402 1.48343e-05 18.5 1.48343e-05 18.5H20C20 18.5 20.025 15.401 17.881 14.666Z" fill="#C5C5C5"/>
+                  <path d="M17.881 14.666C15.737 13.931 13.625 13 12.674 12.276C12.017 11.775 11.904 10.658 12.157 9.861C13.275 8.958 14.021 7.384 14.021 5.583C14.021 2.776 12.221 0.5 10 0.5C7.77902 0.5 5.97901 2.776 5.97901 5.583C5.97901 7.384 6.72501 8.957 7.84201 9.86C8.09501 10.658 7.98302 11.775 7.32502 12.276C6.37502 13 4.26201 13.93 2.11801 14.666C-0.0259852 15.402 1.48343e-05 18.5 1.48343e-05 18.5H20C20 18.5 20.025 15.401 17.881 14.666Z" fill="#C5C5C5"/>
                 </svg>
               <span class="visually-hidden">Вы вошли как</span>
               <span>Равшан Джамшутович</span>
-            </a>
+              </a>
               <a class="authorized-user__icon" href="#">
                 <svg aria-hidden="true" focusable="false" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 9L11.125 0.5V6.5H5.125V11.5H11.125V17.5L20 9Z" fill="#C5C5C5"/>
@@ -111,51 +110,51 @@
         <h2 class="visually-hidden">Что мы можем предложить</h2>
         <ul class="promo__list">
           <li class="promo__item item_yellow label-new">
-            <p aria-hidden="true" focusable="false"> Материалы</p>
+            <p aria-hidden="true"> Материалы</p>
             <a class="promo__link" href="#" aria-label="Материалы на любой вкус">на любой вкус</a>
           </li>
           <li class="promo__item item_blue">
-            <p aria-hidden="true" focusable="false">Инструмент</p>
+            <p aria-hidden="true">Инструмент</p>
             <a class="promo__link" href="#" aria-label="Инструмент на все случаи">на все случаи</a>
           </li>
           <li class="promo__item item_violet">
-            <p aria-hidden="true" focusable="false">Техника</p>
+            <p aria-hidden="true">Техника</p>
             <a class="promo__link" href="#" aria-label="Техника для стройки">для стройки</a>
           </li>
           <li class="promo__item label-new item_green">
-            <p aria-hidden="true" focusable="false">Скидки 50%</p>
+            <p aria-hidden="true">Скидки 50%</p>
             <a class="promo__link" href="#" aria-label="Скидки 50% на 350 товаров">на 350 товаров</a>
           </li>
           <li class="promo__item item_yellow">
-            <p aria-hidden="true" focusable="false">Доставка</p>
+            <p aria-hidden="true">Доставка</p>
             <a class="promo__link" href="#" aria-label="Доставка бесплатно">бесплатно</a>
           </li>
           <li class="promo__item-slider">
-              <ul class="slider">
-                <li class="slider__content current">
-                  <p><span class="slider__content_uppercase">Перфораторы</span> <br>
-                  Настоящие мужские игрушки</p>
-                  <img src="img/perforator.jpg" alt="Мужчина с перфоратором" width="620" height="266">
-                </li>
-                <li class="slider__content ">
-                  <p><span class="slider__content_uppercase">Дрели</span> <br>
-                  Соседям на радость!</p>
-                  <img src="img/drel.jpg" alt="Мужчина с дрелью" width="620" height="266">
-                </li>
-              </ul>
-                <a class="slider__link button" href="catalog.html">Открыть каталог</a>
-                <div class="slider__controls">
-                  <button type="button" aria-label="Первый слайд" class="slider__controls_left">
-                    <svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M19.9244 0.941406L21.9225 2.98921L4.90696 20.436L21.978 37.9375L19.9789 39.9853L0.910614 20.436L19.9244 0.941406Z" fill="white"/>
-                    </svg>
-                  </button>
-                  <button type="button" aria-label="Второй слайд" class="slider__controls_right">
-                    <svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2.07568 39.0586L0.0775054 37.0108L17.0931 19.564L0.0220266 2.06249L2.02116 0.0146899L21.0894 19.564L2.07568 39.0586Z" fill="white"/>
-                    </svg>
-                  </button>
-                </div>
+            <ul class="slider">
+              <li class="slider__content current">
+                <p><span class="slider__content_uppercase">Перфораторы</span> <br>
+                Настоящие мужские игрушки</p>
+                <img src="img/perforator.jpg" alt="Мужчина с перфоратором" width="620" height="266">
+              </li>
+              <li class="slider__content ">
+                <p><span class="slider__content_uppercase">Дрели</span> <br>
+                Соседям на радость!</p>
+                <img src="img/drel.jpg" alt="Мужчина с дрелью" width="620" height="266">
+              </li>
+            </ul>
+            <a class="slider__link button" href="catalog.html">Открыть каталог</a>
+            <div class="slider__controls">
+              <button type="button" aria-label="Первый слайд" class="slider__controls_left">
+                <svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.9244 0.941406L21.9225 2.98921L4.90696 20.436L21.978 37.9375L19.9789 39.9853L0.910614 20.436L19.9244 0.941406Z" fill="white"/>
+                </svg>
+              </button>
+              <button type="button" aria-label="Второй слайд" class="slider__controls_right">
+                <svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.07568 39.0586L0.0775054 37.0108L17.0931 19.564L0.0220266 2.06249L2.02116 0.0146899L21.0894 19.564L2.07568 39.0586Z" fill="white"/>
+                </svg>
+              </button>
+            </div>
           </li>
         </ul>
       </section>
@@ -166,82 +165,82 @@
         </header>
         <ul class="products__list">
           <li class="products__item item label-new">
-              <div class="wrap-popup">
-                <img class="item__image" src="img/bosch9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164"/>
-              </div>
-                <h3 class="item__title"><a href="#">Перфоратор BOSCH <br> BFG 9000</a></h3> <!--Ссылка внутри h3 сделана для доступности, предполагаю что при переходе по ссылке откроется страница товара на которой будет нормальные кнопки купить или добавить в закладки. Как реализовать с попапом не придумала.-->
-                <p class="item__content_delete"><del> 32500 p.</del></p>
-                <p class="item__content">25500 p.</p>
-                <div class="products__popup popup_hidden">
-                  <a href="#" class="products__button products__button_buy">
-                    <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
-                      <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
-                      <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
-                    </svg> Купить
-                  </a>
-                  <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
-                </div>
+            <div class="wrap-popup">
+              <img class="item__image" src="img/bosch9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164"/>
+            </div>
+            <h3 class="item__title"><a href="#">Перфоратор BOSCH <br> BFG 9000</a></h3> <!--Ссылка внутри h3 сделана для доступности, предполагаю что при переходе по ссылке откроется страница товара на которой будет нормальные кнопки купить или добавить в закладки. Как реализовать с попапом не придумала.-->
+            <p class="item__content_delete"><del> 32500 p.</del></p>
+            <p class="item__content">25500 p.</p>
+            <div class="products__popup popup_hidden">
+              <a href="#" class="products__button products__button_buy">
+                <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                  <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                  <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                </svg> Купить
+              </a>
+              <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
+            </div>
           </li>
           <li class="products__item item label-new">
-              <div class="wrap-popup">
-                <img class="item__image" src="img/bosch3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112" />
-              </div>
-              <h3 class="item__title"><a href="#">Перфоратор BOSCH <br> BFG 3000</a></h3>
-              <p class="item__content_delete"><del> 22500 p.</del></p>
-              <p class="item__content">15500 p.</p>
-              <div class="products__popup popup_hidden">
-                <a href="#" class="products__button products__button_buy">
-                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
-                    <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
-                    <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
-                  </svg> Купить
-                </a>
-                <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
-              </div>
+            <div class="wrap-popup">
+              <img class="item__image" src="img/bosch3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112" />
+            </div>
+            <h3 class="item__title"><a href="#">Перфоратор BOSCH <br> BFG 3000</a></h3>
+            <p class="item__content_delete"><del> 22500 p.</del></p>
+            <p class="item__content">15500 p.</p>
+            <div class="products__popup popup_hidden">
+              <a href="#" class="products__button products__button_buy">
+                <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                  <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                  <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                </svg> Купить
+              </a>
+              <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
+            </div>
           </li>
           <li class="products__item item">
-              <div class="wrap-popup">
-                <img class="item__image" src="img/bosch6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128" />
-              </div>
-              <h3 class="item__title"><a href="#">Перфоратор BOSCH <br> BFG 6000</a></h3>
-              <p class="item__content_delete"><del> 30500 p.</del></p>
-              <p class="item__content">25500 p.</p>
-              <div class="products__popup popup_hidden">
-                <a href="#" class="products__button products__button_buy">
-                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
-                    <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
-                    <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
-                  </svg> Купить
-                </a>
-                <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
-              </div>
+            <div class="wrap-popup">
+              <img class="item__image" src="img/bosch6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128" />
+            </div>
+            <h3 class="item__title"><a href="#">Перфоратор BOSCH <br> BFG 6000</a></h3>
+            <p class="item__content_delete"><del> 30500 p.</del></p>
+            <p class="item__content">25500 p.</p>
+            <div class="products__popup popup_hidden">
+              <a href="#" class="products__button products__button_buy">
+                <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                  <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                  <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                </svg> Купить
+              </a>
+              <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
+            </div>
           </li>
           <li class="products__item item label-new">
-              <div class="wrap-popup ">
-                <img class="item__image" src="img/bosch2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112" />
-              </div>
-              <h3 class="item__title"><a href="#">Перфоратор BOSCH <br> BFG 2000</a></h3>
-              <p class="item__content_delete"><del> 22500 p.</del></p>
-              <p class="item__content">12500 p.</p>
-              <div class="products__popup popup_hidden">
-                <a href="#" class="products__button products__button_buy">
-                  <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
-                    <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
-                    <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
-                  </svg> Купить
-                </a>
-                <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
-              </div>
+            <div class="wrap-popup ">
+              <img class="item__image" src="img/bosch2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112" />
+            </div>
+            <h3 class="item__title"><a href="#">Перфоратор BOSCH <br> BFG 2000</a></h3>
+            <p class="item__content_delete"><del> 22500 p.</del></p>
+            <p class="item__content">12500 p.</p>
+            <div class="products__popup popup_hidden">
+              <a href="#" class="products__button products__button_buy">
+                <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+                  <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+                  <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
+                </svg> Купить
+              </a>
+              <button type="button" class="products__button products__button_to-bookmarks">В закладки</button>
+            </div>
           </li>
         </ul>
       </section>
       <section class="top-makers container">
         <header class="top-makers__header">
-          <h2>Популярные производители</h2>
+          <h2>Популярные производители:</h2>
           <a class="button" href="blank.html">Все производители</a>
         </header>
         <ul class="top-makers__list">
@@ -277,8 +276,8 @@
           <p class="servises__text">Хороший интернет-магазин отличается от плохого не только ценами! <br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services__box box">
-            <div class="input-wrapper">
-              <button type="button" class="box__control" id="delivery">Доставка</button>
+            <div class="button-wrapper">
+              <button type="button" class="box__control box__control-active" id="delivery">Доставка</button>
               <button type="button" class="box__control" id="guarantee">Гарантия</button>
               <button type="button" class="box__control" id="credit">Кредит</button>
             </div>
@@ -307,7 +306,7 @@
                 Залезть в долговую яму стало проще!<br />
                 Кредитные консультанты придут вам на помощь.
               </p>
-            <button type="button" class="item__button button">Отправить заявку</button>
+              <button type="button" class="item_credit__button button">Отправить заявку</button>
             </div>
           </div>
         </section>
@@ -315,14 +314,13 @@
       <section class="about-contacts container">
         <h2 class="visually-hidden">Доставка. Контакты.</h2>
         <section class="about">
-          <h3 class="about__title">Компания "Техномарт"</h3>
+          <h3 class="about__title">Компания &#171;Техномарт&#187;</h3>
           <p class="about__text">
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
             для <br> ремонта и строительства не оставит равнодушными любителей
             сэкономить  на <br> гастарбайтерах.
           </p>
-          <p class="about__delivery delivery">
-            Мы можем доставить ваш товар в самые отдаленные точки России!</p>
+          <p class="about__delivery delivery">Мы можем доставить ваш товар в самые отдаленные точки России!</p>
           <p class="about__delivery delivery">Техномарт работает со многими транспортными компаниями:</p>
           <ul class="delivery__list">
             <li class="delivery__item">Деловые линии</li>
@@ -337,9 +335,7 @@
             Вы можете забрать товар сами<br />
             заехав в наш офис:
           </p>
-
-            <a href="#"><img class="contacts__map" src="img/map.png" alt="Адрес: наб. Реки Карповки, 5 лит П"  width="300" height="158"/></a>
-
+          <a href="#"><img class="contacts__map" src="img/map.png" alt="Адрес: наб. Реки Карповки, 5 лит П"  width="300" height="158"/></a>
           <a href="#" class="contacts__button button" >Заблудились? Напишите нам!</a>
         </section>
       </section>
@@ -347,27 +343,26 @@
     <footer class="footer">
         <section class="footer-menu container">
             <div class="footer-menu__logo">
-                <a href="#">
-                  <img src="img/logo-technomart-na-podlozhke.png" alt="Лого Техномарт" width="220" height="68">
-                </a>
-                <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br>
-                    +7 800 555-86-28</p>
+              <a href="index.html">
+                <img src="img/logo-technomart-na-podlozhke.png" alt="Лого Техномарт" width="220" height="68">
+              </a>
+              <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br>+7 800 555-86-28</p>
             </div>
             <nav class="footer-menu__nav nav">
-                <h3 class="visually-hidden">Навигация по сайту</h3>
-                <ul class="nav__list">
-                    <li><a class="nav__item" href="#">Компания</a></li>
-                    <li><a class="nav__item" href="#">Новости</a></li>
-                    <li><a class="nav__item" href="#">Каталог</a></li>
-                    <li><a class="nav__item" href="#">Доставка</a></li>
-                    <li><a class="nav__item" href="#">Контакты</a></li>
-                </ul>
-                <ul class="nav__list nav__list_orange">
-                  <li><a class="nav__item nav__item_orange" href="#">Материалы</a></li>
-                  <li><a class="nav__item nav__item_orange" href="#">Техника</a></li>
-                  <li><a class="nav__item nav__item_orange" href="#">Инструменты</a></li>
-                    <li><a class="nav__item nav__item_orange" href="#">Спецпредложения</a></li>
-                </ul>
+              <h3 class="visually-hidden">Навигация по сайту</h3>
+              <ul class="nav__list">
+                <li><a class="nav__item" href="#">Компания</a></li>
+                <li><a class="nav__item" href="#">Новости</a></li>
+                <li><a class="nav__item" href="#">Каталог</a></li>
+                <li><a class="nav__item" href="#">Доставка</a></li>
+                <li><a class="nav__item" href="#">Контакты</a></li>
+              </ul>
+              <ul class="nav__list nav__list_orange">
+                <li><a class="nav__item nav__item_orange" href="#">Материалы</a></li>
+                <li><a class="nav__item nav__item_orange" href="#">Техника</a></li>
+                <li><a class="nav__item nav__item_orange" href="#">Инструменты</a></li>
+                <li><a class="nav__item nav__item_orange" href="#">Спецпредложения</a></li>
+              </ul>
             </nav>
         </section>
         <div class="socials-wrapper">
@@ -404,54 +399,38 @@
     </footer>
     <!--Попап-->
     <section class="modal modal-feedback">
+      <h3 class="visually-hidden">Форма обратной связи. Напишите нам!</h3>
       <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form-wrap">
-              <div class="input-wrap">
-                <label for="name"
-                  >Ваше имя:</label>
-                  <input class="modal-feedback__input" type="text" name="name" id="name" placeholder="Имя Фамилия" />
-              </div>
-             <div class="input-wrap">
-                <label for="email"
-                  >Ваш e-mail:</label>
-                  <input class="modal-feedback__input"
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="email@example.com"
-                  />
-             </div>
-            <div class="input-wrap textarea-wrap">
-              <label for="text"
-                >Текст письма:</label>
-                <textarea class="modal-feedback__input textarea"
-                  name="text"
-                  id="text"
-                  cols="30"
-                  rows="10"
-                  placeholder="В свободной форме"
-                ></textarea>
-            </div>
+        <div class="form-wrap">
+          <div class="input-wrap">
+            <label for="name">Ваше имя:</label>
+            <input class="modal-feedback__input" type="text" name="name" id="name" placeholder="Имя Фамилия" />
           </div>
-         <div class="box-button">
-           <button type="submit" class="modal-feedback__button">Отправить</button>
+          <div class="input-wrap">
+            <label for="email">Ваш e-mail:</label>
+            <input class="modal-feedback__input" type="email" name="email" id="email" placeholder="email@example.com" />
           </div>
-          <button type="button" class="modal__button_close" aria-label="Закрыть">
-            </button>
+          <div class="input-wrap textarea-wrap">
+            <label for="text">Текст письма:</label>
+            <textarea class="modal-feedback__input textarea" name="text" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+          </div>
+        </div>
+        <div class="box-button">
+          <button type="submit" class="modal-feedback__button">Отправить</button>
+        </div>
+        <button type="button" class="modal__button_close" aria-label="Закрыть"></button>
       </form>
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d998.3800241396799!2d30.315022253705134!3d59.969303685291294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2sru!4v1654506881673!5m2!1sru!2sru" width="943" height="449" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
-      </iframe>
-      <button type="button" class="modal__button_close" aria-label="Закрыть">
-      </button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d998.3800241396799!2d30.315022253705134!3d59.969303685291294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2sru!4v1654506881673!5m2!1sru!2sru" width="943" height="449" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+      <button type="button" class="modal__button_close" aria-label="Закрыть"></button>
     </section>
     <section class="modal  popup-cart">
       <h4 class="popup-cart__title">Товар добавлен в корзину!</h4>
       <button type="button" class="popup-cart__button_close" aria-label="Закрыть">
         <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.2729 10.4999L20.6949 3.07793C21.0839 2.68893 21.0839 2.05293 20.6949 1.66393L19.3359 0.304934C18.9469 -0.0840664 18.3109 -0.0840664 17.9219 0.304934L10.4999 7.72693L3.07793 0.304934C2.68893 -0.0840664 2.05293 -0.0840664 1.66393 0.304934L0.304934 1.66393C-0.0840664 2.05293 -0.0840664 2.68893 0.304934 3.07793L7.72693 10.4999L0.305934 17.9219C-0.0830664 18.3109 -0.0830664 18.9469 0.305934 19.3359L1.66493 20.6949C2.05393 21.0839 2.68993 21.0839 3.07893 20.6949L10.5009 13.2729L17.9229 20.6949C18.3119 21.0839 18.9479 21.0839 19.3369 20.6949L20.6959 19.3359C21.0849 18.9469 21.0849 18.3109 20.6959 17.9219L13.2729 10.4999Z" fill="#EE3643"/>
+          <path d="M13.2729 10.4999L20.6949 3.07793C21.0839 2.68893 21.0839 2.05293 20.6949 1.66393L19.3359 0.304934C18.9469 -0.0840664 18.3109 -0.0840664 17.9219 0.304934L10.4999 7.72693L3.07793 0.304934C2.68893 -0.0840664 2.05293 -0.0840664 1.66393 0.304934L0.304934 1.66393C-0.0840664 2.05293 -0.0840664 2.68893 0.304934 3.07793L7.72693 10.4999L0.305934 17.9219C-0.0830664 18.3109 -0.0830664 18.9469 0.305934 19.3359L1.66493 20.6949C2.05393 21.0839 2.68993 21.0839 3.07893 20.6949L10.5009 13.2729L17.9229 20.6949C18.3119 21.0839 18.9479 21.0839 19.3369 20.6949L20.6959 19.3359C21.0849 18.9469 21.0849 18.3109 20.6959 17.9219L13.2729 10.4999Z" fill="#EE3643"/>
         </svg>
       </button>
       <div class="box-button">
