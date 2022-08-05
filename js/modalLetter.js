@@ -27,14 +27,13 @@ contactsButton.addEventListener("click", function (evt) {
     inputEmail.value = storage;
     inputText.focus();
   }
-
-})
+});
 
 closeButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalFeedback.classList.remove('active');
   modalFeedback.classList.remove("modal-error");
-})
+});
 
 modalForm.addEventListener("submit", function (evt) {
   if (!inputName.value || !inputEmail.value || !inputText.value) {
@@ -48,7 +47,6 @@ modalForm.addEventListener("submit", function (evt) {
     localStorage.setItem("email", inputEmail.value);
     }
   }
-
 });
 
 window.addEventListener("keydown", function (evt) {
